@@ -1,0 +1,57 @@
+        .layout{
+            width: 600px;
+            height: auto;
+            /* in zamani mitone auto bashe ke meghdar dehit NESBI nabashe ba px meghdar bedi */
+            box-sizing: border-box;
+            border: 1px solid red;
+            margin: 0 auto;
+            padding: 5px;
+            background-color: khaki;
+        }
+        .header{
+            width: calc(100% - 2px);
+            height: 180px;
+            border: 1px solid gray;
+            background-color: rgba(158, 107, 107, 0.704);
+        }
+        .body{
+            width: calc(100% - 2px);
+            height: 540px;
+            /* border: 1px solid gray; */
+            margin: 5px 0;
+        }
+        .content{
+            height: 100%;
+            width: calc(60% - 2px);
+            border: 1px solid red;
+            float: left;
+            background: linear-gradient(to bottom,rgba(158, 107, 107, 0.704),rgba(158, 107, 107, 0.119));
+        }
+        .sidebar{
+            height: 100%;
+            width: calc(40% - 7px);
+            border: 1px solid red;
+            float: right;
+            margin-left: 5px;
+            background: linear-gradient(to bottom,rgba(158, 107, 107, 0.704),rgba(158, 107, 107, 0.119));
+
+        }
+        .footer{
+            width: calc(100% - 2px);
+            height: 180px;
+            border: 1px solid gray;
+        }
+        @media only screen and (max-width:660px){
+
+            .sidebar{
+                height: calc(20% - 7px);
+                width: calc(100% - 2px);
+                margin-top: 5px;
+                background: linear-gradient(khaki);
+            }
+               .content{
+                height: calc(80% - 7px);
+                width: calc(100% - 2px);
+               }
+            
+        }
